@@ -37,7 +37,7 @@ namespace P7_19310896TV2021
 
             if(pintaR == 1)
             {
-                arbolAVL.color(g, this.Font, Brushes.Black, Brushes.Yellow, Pens.Blue,arbolAVL.Raiz,post.Checked,Ino.Checked,pre.Checked);
+                arbolAVL.color(g, this.Font, Brushes.White, Brushes.Yellow, Pens.Blue, arbolAVL.Raiz, post.Checked, Ino.Checked, pre.Checked);
             }
             if (pintaR == 2)
             {

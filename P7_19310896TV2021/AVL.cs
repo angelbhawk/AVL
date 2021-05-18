@@ -283,8 +283,8 @@ namespace P7_19310896TV2021
                     }
                 }
             }
-            else
-                MessageBox.Show("Valor no encontrado", "Error", MessageBoxButtons.OK);
+            else { }
+                //MessageBox.Show("Valor no encontrado", "Error", MessageBoxButtons.OK);
         }
 
 
