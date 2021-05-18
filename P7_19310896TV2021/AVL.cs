@@ -419,7 +419,7 @@ namespace P7_19310896TV2021
             formato.LineAlignment = StringAlignment.Center;
 
             grafo.DrawEllipse(Lapiz, rect);
-            grafo.FillEllipse(Brushes.PaleVioletRed, rect);
+            grafo.FillEllipse(Brushes.Gray, rect);
             grafo.DrawString(valor.ToString(), fuente, Brushes.Black, CoordenadaX, CoordenadaY, formato);
         }
     }

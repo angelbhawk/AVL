@@ -62,7 +62,7 @@ namespace P7_19310896TV2021
             {
                 if (Raiz != null)
                 {
-                    color(grafo, fuente, Brushes.Blue, RellenoFuente, Lapiz, Raiz.NodoIzquierdo, post, inor, preor);
+                    color(grafo, fuente, Brushes.Red, RellenoFuente, Lapiz, Raiz.NodoIzquierdo, post, inor, preor);
                     Raiz.Colorear(grafo, fuente, entorno, RellenoFuente, Lapiz);
                     Thread.Sleep(500);
                     Raiz.Colorear(grafo, fuente, Relleno, RellenoFuente, Lapiz);
@@ -75,10 +75,10 @@ namespace P7_19310896TV2021
             {
                 if (Raiz != null)
                 {
-                    Raiz.Colorear(grafo, fuente, Brushes.Yellow, Brushes.Blue, Pens.Black);
+                    Raiz.Colorear(grafo, fuente, Brushes.Yellow, Brushes.Red, Pens.Black);
                     Thread.Sleep(500);
                     Raiz.Colorear(grafo, fuente, Brushes.White, Brushes.Black, Pens.Black);
-                    color(grafo, fuente, Brushes.Blue, RellenoFuente, Lapiz, Raiz.NodoIzquierdo, post, inor, preor);
+                    color(grafo, fuente, Brushes.Red, RellenoFuente, Lapiz, Raiz.NodoIzquierdo, post, inor, preor);
                     color(grafo, fuente, Relleno, RellenoFuente, Lapiz, Raiz.NodoDerecho, post, inor, preor);
                 }
             }
@@ -104,7 +104,7 @@ namespace P7_19310896TV2021
                 if (busqueda < Raiz.valor)
                 {
                     Thread.Sleep(500);
-                    Raiz.Colorear(grafo, fuente, entorno, Brushes.Blue, Lapiz);
+                    Raiz.Colorear(grafo, fuente, entorno, Brushes.Red, Lapiz);
                     colorearB(grafo, fuente, Relleno, RellenoFuente, Lapiz, Raiz.NodoIzquierdo, busqueda);
                 }
                 else

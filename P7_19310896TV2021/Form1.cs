@@ -43,6 +43,7 @@ namespace P7_19310896TV2021
             {
                 arbolAVL.colorearB(g, this.Font, Brushes.White, Brushes.Red, Pens.White, arbolAVL.Raiz, int.Parse(valor.Text));
             }
+            pintaR = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -132,6 +133,12 @@ namespace P7_19310896TV2021
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pre_Click(object sender, EventArgs e)
+        {
+            pintaR = 1;
+            this.Refresh();
         }
     }
 }

@@ -35,17 +35,17 @@
             this.button1 = new System.Windows.Forms.Button();
             this.valor = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.post = new System.Windows.Forms.RadioButton();
             this.Ino = new System.Windows.Forms.RadioButton();
             this.pre = new System.Windows.Forms.RadioButton();
             this.errores = new System.Windows.Forms.ErrorProvider(this.components);
             this.lblaltura = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errores)).BeginInit();
@@ -113,6 +113,15 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(58, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Recorridos";
+            // 
             // post
             // 
             this.post.AutoSize = true;
@@ -123,6 +132,7 @@
             this.post.TabStop = true;
             this.post.Text = "Post Orden";
             this.post.UseVisualStyleBackColor = true;
+            this.post.Click += new System.EventHandler(this.pre_Click);
             // 
             // Ino
             // 
@@ -134,6 +144,7 @@
             this.Ino.TabStop = true;
             this.Ino.Text = "In Orden";
             this.Ino.UseVisualStyleBackColor = true;
+            this.Ino.Click += new System.EventHandler(this.pre_Click);
             // 
             // pre
             // 
@@ -145,6 +156,7 @@
             this.pre.TabStop = true;
             this.pre.Text = "Pre Orden";
             this.pre.UseVisualStyleBackColor = true;
+            this.pre.Click += new System.EventHandler(this.pre_Click);
             // 
             // errores
             // 
@@ -158,15 +170,6 @@
             this.lblaltura.Size = new System.Drawing.Size(13, 13);
             this.lblaltura.TabIndex = 2;
             this.lblaltura.Text = "0";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(58, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Recorridos";
             // 
             // label3
             // 
@@ -192,6 +195,19 @@
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(43)))), ((int)(((byte)(33)))));
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
+            this.btnSalir.Location = new System.Drawing.Point(20, 194);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(134, 23);
+            this.btnSalir.TabIndex = 4;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -213,19 +229,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(215, 514);
             this.panel1.TabIndex = 1;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(43)))), ((int)(((byte)(33)))));
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(20, 194);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(134, 23);
-            this.btnSalir.TabIndex = 4;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // groupBox1
             // 
